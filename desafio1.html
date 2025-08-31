@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <script  src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TechStore</h1>
+            <p>Tu tienda de tecnología de confianza</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <section class="products-section">
+                <h2>Productos Disponibles</h2>
+                <div class="products" id="products-container">
+                    <!-- Los productos se cargarán dinámicamente con JavaScript -->
+                </div>
+            </section>
+
+            <aside class="cart-section">
+                <h2>Tu Carrito</h2>
+                <div class="cart">
+                    <div id="cart-items">
+                        <!-- Los items del carrito se cargarán dinámicamente -->
+                        <div class="empty-cart">Tu carrito está vacío</div>
+                    </div>
+                    <div class="cart-summary">
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Impuestos (16%):</span>
+                            <span id="taxes">$0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="total">$0.00</span>
+                        </div>
+                        <button class="checkout-btn" id="checkout-btn">Finalizar Compra</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <section class="invoice" id="invoice">
+            <div class="invoice-header">
+                <h2>Factura de Compra</h2>
+                <p>TechStore - NIT: 123456789-0</p>
+            </div>
+            <div class="invoice-details">
+                <p><strong>Fecha:</strong> <span id="invoice-date"></span></p>
+                <p><strong>Número de Factura:</strong> <span id="invoice-number"></span></p>
+            </div>
+            <table class="invoice-items">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unitario</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="invoice-items-body">
+                    <!-- Los items de la factura se cargarán dinámicamente -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Subtotal</td>
+                        <td id="invoice-subtotal">$0.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Impuestos (16%)</td>
+                        <td id="invoice-taxes">$0.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><strong>Total</strong></td>
+                        <td id="invoice-total"><strong>$0.00</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button class="continue-shopping" id="continue-shopping">Seguir Comprando</button>
+        </section>
+    </div>
+</body>
+</html>
