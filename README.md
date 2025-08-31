@@ -1,5 +1,3 @@
-# bluezef.github.io
-Desafío 1 DPS GP200748
 <!DOCTYPE html>
 <html lang="es">
 <head>
