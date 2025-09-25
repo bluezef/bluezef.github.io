@@ -13,7 +13,6 @@
             <p>Tu tienda de tecnología de confianza</p>
         </div>
     </header>
-
     <div class="container">
         <div class="main-content">
             <section class="products-section">
@@ -22,7 +21,6 @@
                     <!-- Los productos se cargarán dinámicamente con JavaScript -->
                 </div>
             </section>
-
             <aside class="cart-section">
                 <h2>Tu Carrito</h2>
                 <div class="cart">
@@ -48,7 +46,6 @@
                 </div>
             </aside>
         </div>
-
         <section class="invoice" id="invoice">
             <div class="invoice-header">
                 <h2>Factura de Compra</h2>
